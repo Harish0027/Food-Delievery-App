@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #454545;
+    margin-top: 5px;
+}
+.items .item{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1.25fr;
+}
+.track{
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: auto;
+    background-color: rgb(241, 208, 202);
+}
+.btn{
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(241, 208, 202);
+    border-radius: 7px;
+    border: 1px solid rgb(241, 208, 202);
+}
+.dot{
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 70%;
+}
+.myorder-status{
+    display: flex;
+    align-items: center;
+}
+.myorder-status-mainstatus{
+    margin-left: 10px;
+}
+@media(max-width:750px){
+    .img{
+        display: none;
+    }
+    .track{
+        display: none;
+    }
+    .items .item{
+        display: grid;
+        grid-template-columns: 2.5fr 2fr 2fr;
+    }
+    .btn{
+        display: none;
+    }
+    .item-name{
+        margin-right: 10px;
+
+    }
+}
